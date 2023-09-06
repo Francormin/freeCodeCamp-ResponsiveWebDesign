@@ -1,0 +1,300 @@
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  font-family: "Lato", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+#header {
+  position: fixed;
+  top: 0;
+  min-height: 80px;
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eee;
+  flex-wrap: wrap;
+}
+
+#header-img {
+  width: 100%;
+  max-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+
+@media (max-width: 650px) {
+  #header-img {
+    max-width: 280px;
+    margin: 30px auto;
+  }
+}
+
+#nav-bar {
+  width: 40%;
+}
+
+@media (max-width: 650px) {
+  #nav-bar {
+    width: 100%;
+    padding-bottom: 10px;
+  }
+}
+
+#nav-bar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-link {
+  display: flex;
+  flex-direction: row;
+}
+
+#hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 100px;
+}
+
+@media (max-width: 650px) {
+  #hero {
+    margin-top: 130px;
+  }
+}
+
+#hero h2 {
+  margin-bottom: 20px;
+}
+
+#hero input[type="email"] {
+  max-width: 275px;
+  width: 100%;
+  padding: 5px;
+}
+
+#hero input[type="submit"] {
+  max-width: 150px;
+  width: 100%;
+  height: 45px;
+  margin: 15px 0;
+  border: 0;
+  border-radius: 2px;
+  background: rgb(241, 196, 15);
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 550px) {
+  #hero input[type="submit"] {
+    font-size: 0.9rem;
+    height: 35px;
+  }
+}
+
+#hero input[type="submit"]:hover,
+.btn:hover {
+  background-color: rgba(241, 165, 0);
+  transition: background-color 1s;
+}
+
+#container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#features {
+  margin-top: 30px;
+}
+
+#features .feature {
+  display: flex;
+  margin: 5px 0;
+}
+
+@media (max-width: 550px) {
+  #features .feature {
+    margin-top: -40px;
+  }
+}
+
+#features .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 125px;
+  width: 20vw;
+  color: rgba(255, 150, 0);
+  font-size: 1.1rem;
+}
+
+@media (max-width: 550px) {
+  #features .icon {
+    display: none;
+  }
+}
+
+#features .desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 125px;
+  width: 80vw;
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 550px) {
+  #features .desc {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    height: 150px;
+    font-size: 1rem;
+  }
+}
+
+#how-it-works {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 550px) {
+  #how-it-works {
+    margin-top: 20px;
+  }
+}
+
+#how-it-works iframe {
+  height: 300px;
+  width: 100%;
+  max-width: 560px;
+}
+
+@media (max-width: 650px) {
+  #how-it-works iframe {
+    width: 90%;
+  }
+}
+
+#pricing {
+  margin: 70px 20px 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(100% / 3);
+  margin: 0 10px;
+  border: 1px solid #000;
+  border-radius: 3px;
+}
+
+.level {
+  background-color: #ddd;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+}
+
+.product h2 {
+  margin-top: 15px;
+}
+
+.product ol {
+  margin: 15px 0;
+}
+
+.product ol li {
+  padding: 5px 0;
+}
+
+.btn {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-weight: 400;
+  border: 0;
+  border-radius: 2px;
+  background: rgb(241, 196, 15);
+  cursor: pointer;
+  margin: 15px 0;
+}
+
+@media (max-width: 650px) {
+  #pricing {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 800px) {
+  #pricing {
+    flex-direction: column;
+  }
+
+  .product {
+    max-width: 300px;
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+
+#footer {
+  margin-top: 40px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+#footer ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#footer ul li {
+  padding: 0 10px;
+}
+
+#footer span {
+  margin-top: 5px;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 0.9em;
+  color: #444;
+}
